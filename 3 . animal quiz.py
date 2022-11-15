@@ -7,7 +7,7 @@ def check_guess(guess, answer) :
     while still_guessing and attempt < 3:
         if guess.lower() == answer.lower() :
              print ('Correct Answer')
-             score = score + 1
+             score = score + 3 - attempt
              still_guessing = False
 
         else :
@@ -33,6 +33,9 @@ check_guess(guess2, 'cheetah')
 #question 3
 guess3 = input ('Which is the largest Animal ? ')
 check_guess(guess3, 'blue whale')
+#question 4
+guess4 = input('Which one of these is a fish ?\n A)Whale\n B)Dolphin\n C)Shark\n D)Squid\n Type A, B, C, D ')
+check_guess(guess4, 'c')
         
         
 
